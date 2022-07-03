@@ -1,0 +1,21 @@
+
+
+1 = Esse tema disponibiliza 2 exemplos de tema jogo a jogo (pergame).
+    Para testar voce precisa:
+
+       Escolher qualquer desses temas na Gamelist:
+           Wheels Horiz Down - Fanart Full - Video Center Delay (16:9)
+           Wheels Roleta Right - Fanart Full - Video Center Delay (16:9)
+
+       Ter esses 2 jogos instalados no sistema ps2, exatamente com esse texto/nome:
+	   Final Fantasy X International
+	   God of War
+
+	para criar mais temas (pergame), bastar seguir esses 2 exemplos,
+	ambos tem o mesmo resultado, apenas são organizados diferentes,
+	pergame com uma pasta para cada jogo, ou todos os jogos na mesma pasta.
+	escolha o que voce mais gosta.
+        Os arquivos se encontram na pasta: ___pergametheme
+
+
+
