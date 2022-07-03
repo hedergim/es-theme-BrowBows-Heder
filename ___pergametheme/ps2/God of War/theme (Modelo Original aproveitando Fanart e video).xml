@@ -1,0 +1,118 @@
+
+<!-- Exemplo de tema pergame com tema do jogo dentro de (cada) pasta -->
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+
+<!-- Aqui no <view name> 
+     coloca o nome dos temas gamelist que voce escolheu pra ser a base para o pergame,
+     justamente o que voce colocoou isso:
+<gameextras name="gameextras">
+   <path>./../_pergametheme/${system.theme}</path>
+</gameextras>
+     que é tipo uma include, so que no gamelist  
+	 Se for colocar varios, separe por virgula e espaco -->
+<customView name="Wheels Horiz Down - Fanart Full - Video Center Delay (16:9),
+                  Wheels Roleta Right - Fanart Full - Video Center Delay (16:9)">
+
+
+<!-- Aqui vai colocando false na arte que nao quiser que apareça  -->   
+<control name="md_video">
+    <visible>false</visible>
+</control>
+  
+<control name="fundo_video_gamelist_moldura">
+    <visible>false</visible>
+</control>
+
+<control name="fundo_video_gamelist_fundo">
+    <visible>false</visible>
+</control>  
+  
+  
+  
+<!-- A partir daqui vai colocando quantas artes quiser para o jogo  --> 
+
+<!-- Fundo da Moldura do Video  -->	
+<image name="pergame1" extra="true">
+      <tile>false</tile>
+      <pos>0.610 0.485</pos>
+	  <origin>0.506 0.377</origin>	  
+      <size>1 1</size>
+      <path>./../../_comum a todos/Center Classic Fundo 4por3.png</path>
+      <zIndex>23</zIndex>
+	<storyboard event="open">   
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+    </storyboard>
+    <storyboard event="activatePrev"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+    </storyboard>
+    <storyboard event="activateNext"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+    </storyboard>  
+</image>
+
+<!-- Video, aproveitei o video da pasta media  -->		
+<video name="pergame2" extra="true">
+    <tile>false</tile>
+	<pos>0.610 0.485</pos>
+    <origin>0.5 0.5</origin>
+    <maxSize>0.425 0.436</maxSize>
+	<loops>99</loops> 
+	<effect>none</effect>
+	<path>./../../../../../../../roms/${system.theme}/media/videos/God of War.mp4</path>
+	<delay>4.2</delay>
+	<zIndex>25</zIndex>   
+</video>
+	
+<!-- Bordas da Moldura do Video  -->	
+<image name="pergame3" extra="true">
+      <tile>false</tile>
+      <pos>0.610 0.485</pos>
+	  <origin>0.506 0.377</origin>
+      <size>1 1</size>
+      <path>./../../_comum a todos/Center Classic Moldura 4por3.png</path>
+      <zIndex>27</zIndex>
+	<storyboard event="open">   
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+    </storyboard>
+    <storyboard event="activatePrev"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+    </storyboard>
+    <storyboard event="activateNext"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+    </storyboard>  
+</image>	
+
+<!-- pedaco da Fanart  -->	
+<image name="pergame4" extra="true">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./God of War A.png</path>
+      <zIndex>30</zIndex>
+	<storyboard event="open">   
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4000" duration="500" property="opacity"/>	
+    </storyboard>
+    <storyboard event="activatePrev"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4000" duration="500" property="opacity"/>
+    </storyboard>
+    <storyboard event="activateNext"> 
+            <animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+            <animation mode="easeOut" from="0" to="1" begin="4000" duration="500" property="opacity"/>
+    </storyboard>  
+</image>	
+
+ 
+</customView>
+
+</theme>

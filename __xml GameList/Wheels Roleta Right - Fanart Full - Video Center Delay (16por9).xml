@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!-- 
+Criado Heder Brobows Doido
+Tema do menu Gamelist Obrigatorio
+IMPORTANTE: para criar uma arte nos temas baseados nesses temas obrigatorios, a arte precisa existir nesse tema, 
+            coloque essa tag para a arte existir mas nao aparecer nesse tema:
+            <visible>false</visible>	  
+-->
+
+<!---------------------------gamecarousel------------------------------------- -->
+
+
+<!-- lista dos jogos -->
+ <customView name="Wheels Roleta Right - Fanart Full - Video Center Delay (16:9)" inherits="gamecarousel">
+	<gamecarousel name="gamecarousel">
+		<type>vertical_wheel</type>
+		<pos>0.39 0</pos>
+		<size>1 1</size>
+		<logoScale>1.2</logoScale>
+		<logoSize>0.150 0.260</logoSize>
+		<maxLogoCount>8</maxLogoCount>
+<!-- distancia entre as logos -->		
+		<logoRotation>-9</logoRotation>
+		<logoRotationOrigin>3.5 0.5</logoRotationOrigin>
+		<logoAlignment>center</logoAlignment>   
+		<imageSource>marquee</imageSource>
+		<zIndex>43</zIndex> 
+	</gamecarousel> 
+
+<!-- Texto do Carrossel quando nao tem a Logo -->		
+    <text name="gamecarouselLogoText">
+		<color>FFFFFFFF</color>
+		<glowColor>00000050</glowColor>
+		<glowSize>3</glowSize>
+		<glowOffset>3</glowOffset>
+		<lineSpacing>1.0</lineSpacing>
+        <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+        <fontSize>0.030</fontSize>
+    </text>
+
+<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
+     <helpsystem name="help">
+     <textColor>ffff00</textColor>
+     <origin>0.5 0.5</origin>
+     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+     <fontSize>0.018</fontSize>     
+     <pos>0.475 0.9784</pos>  
+   </helpsystem>
+	
+<!-- WallPaper Por Sistema -->		
+<image name="wallpaper_por_sistema" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <maxSize>1 1</maxSize>
+    <path>./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Consoles 01/${system.theme}.jpg</path>
+    <zIndex>1</zIndex>
+    <visible>false</visible>	
+</image> 
+  
+<!-- Logo por Sistema, aproveita as Wheels dos sistemas -->	
+<image name="logo">
+	<origin>0.5 0.5</origin> 
+	<pos>0.500 0.080</pos>
+	<maxSize>0.220 0.150</maxSize>
+	<path>./__xml Main Menu Wheels Logo/MAIN MENU Wheels Clean/${system.theme}.png</path>
+	<path>./__xml Main Menu Wheels Logo/MAIN MENU Wheels (Para 3 Niveis) Galacticas/${system.theme}.png</path>
+	<linearSmooth>true</linearSmooth>
+	<zIndex>30</zIndex>
+</image>
+
+<!-- Arte extra Fixa Gamelist-->		
+<image name="arte_extra_fixa_gamelist" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <maxSize>1 1</maxSize>
+    <path>./__xml GameList/Artes Fixas/Grid Fundo.png</path>
+    <zIndex>1</zIndex> 
+	<visible>false</visible>
+</image> 
+
+
+<!-- ====== Artes relacionadas aos jogos ====== -->
+
+<!-- A Arte md_boxback esta livre, ainda nao usei -->
+
+<!-- Arte Fanart -->	
+<image name="md_fanart">
+         <pos>0.5 0.5</pos>
+         <size>1 1</size>
+    <zIndex>2</zIndex>  
+
+<storyboard event="open">   
+<animation property="scale" from="1.05" to="1.0" begin="1" duration="1000" mode="linear"/>  	
+</storyboard>
+<storyboard event="activatePrev"> 
+<animation property="scale" from="1.05" to="1.0" begin="1" duration="1000" mode="linear"/> 
+</storyboard>
+<storyboard event="activateNext"> 
+<animation property="scale" from="1.05" to="1.0" begin="1" duration="1000" mode="linear"/> 
+</storyboard>
+
+</image>
+
+<!-- Arte Image -->		
+<image name="md_image">
+	<pos>0.500 0.327</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.344 0.350</maxSize>
+    <zIndex>3</zIndex>  
+    <visible>false</visible>  	
+</image> 
+
+<!-- Arte video -->
+<video name="md_video">
+ <pos>0.506 0.410</pos>
+ <origin>0.5 0.5</origin>
+ <maxSize>0.425 0.436</maxSize>
+	<loops>99</loops> 
+	<effect>none</effect>
+	 <delay>4.2</delay>
+	<zIndex>20</zIndex> 
+</video>
+
+<!-- Arte caixa -->
+<image name="md_thumbnail">
+	<pos>0.872 0.414</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.227 0.392</maxSize>
+    <zIndex>3</zIndex>  
+    <visible>false</visible>	
+</image> 
+
+<!-- Arte do cartucho ou CD, tem que ser boxback pois as outras se repetem -->
+<image name="md_cartridge">
+	<pos>0.871 0.775</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.230 0.250</maxSize>
+    <zIndex>3</zIndex>   
+    <visible>false</visible>	
+</image> 
+
+<!-- Arte Marquee/Wheel/Logo do jogo -->
+<image name="md_marquee">
+    <pos>0.498 0.069</pos>
+    <maxSize>0.216 0.110</maxSize>
+    <origin>0.5 0.5</origin>
+    <zIndex>30</zIndex>
+	<visible>false</visible>
+</image>
+
+
+<!-- Artes acrescentadas alem do tema base -->
+<!-- Artes acrescentadas alem do tema base -->	
+	
+<image name="fundo_video_gamelist_moldura" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0.034</pos>
+    <maxSize>1 1</maxSize>
+    <path>./Artes Fixas/Center Classic Moldura.png</path>
+    <zIndex>25</zIndex> 
+   		 
+<storyboard event="open">   
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+</storyboard>
+<storyboard event="activatePrev"> 
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+</storyboard>
+<storyboard event="activateNext"> 
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+</storyboard>
+</image>
+
+<image name="fundo_video_gamelist_fundo" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0.034</pos>
+    <maxSize>1 1</maxSize>
+    <path>./Artes Fixas/Center Classic Fundo.png</path>
+    <zIndex>15</zIndex> 
+   		 
+<storyboard event="open">   
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+</storyboard>
+<storyboard event="activatePrev"> 
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+</storyboard>
+<storyboard event="activateNext"> 
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>
+</storyboard>
+</image>
+
+<image name="GameList_Wheels_Background_Roleta_Left" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./__xml GameList/Artes Fixas/Roleta Right Classic.png</path>
+		 <zIndex>30</zIndex>
+</image>
+
+
+<!-- Tema Jogo a Jogo -->
+<!-- Tema Jogo a Jogo -->
+
+<!-- 
+<gameextras name="gameextras">
+    <path>./../../../../roms/${system.theme}/_pergametheme</path>
+</gameextras>
+-->
+
+<gameextras name="gameextras">
+   <path>./../___pergametheme/${system.theme}</path>
+</gameextras>
+
+
+   </customView>
+   
+   </theme>

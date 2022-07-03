@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!-- 
+Criado Heder Brobows Doido
+Tema do menu Gamelist Obrigatorio
+IMPORTANTE: para criar uma arte nos temas baseados nesses temas obrigatorios, a arte precisa existir nesse tema, 
+            coloque essa tag para a arte existir mas nao aparecer nesse tema:
+            <visible>false</visible>	  
+-->
+
+<!---------------------------grid------------------------------------- -->
+
+<!-- lista dos jogos -->
+<view name="grid">
+<imagegrid name="gamegrid">
+<!--  config para 9 Wheels grid
+	  <pos>-0.290 -0.110</pos>
+      <size>0.800 1.200</size>
+-->
+	  <pos>-0.295 -0.200</pos>
+      <size>0.800 1.400</size>
+<!--	  <Transition>instant</Transition>   -->
+      <padding>0.280 0.100 0.280 0.100</padding>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>1 7</autoLayout>
+      <autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
+      <margin>0.010 -0.200</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+	  <imageSource>marquee</imageSource>
+	  <zIndex>40</zIndex>         		
+    </imagegrid>
+	
+<gridtile name="default">
+      <padding>64 16</padding>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <imageSizeMode>maxSize</imageSizeMode>
+      <imageColor>FFFFFF</imageColor>
+      <reflexion>0 0.0</reflexion>
+    </gridtile>
+	  
+<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
+     <helpsystem name="help">
+     <textColor>ffff00</textColor>
+     <origin>0.5 0.5</origin>
+     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+     <fontSize>0.018</fontSize>     
+     <pos>0.475 0.9784</pos>  
+   </helpsystem>
+	
+<!-- WallPaper Por Sistema -->		
+<image name="wallpaper_por_sistema" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <maxSize>1 1</maxSize>
+    <path>./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Consoles 01/${system.theme}.jpg</path>
+	<path>./__xml Main Menu Wallpapers/MAIN MENU Wallpapers (Para 3 Niveis) 02/${system.theme}.jpg</path>
+    <zIndex>1</zIndex> 
+</image> 
+  
+<!-- Logo por Sistema, aproveita as Wheels dos sistemas -->	
+<image name="logo">
+    <pos>0.498 0.068</pos>
+    <maxSize>0.215 0.107</maxSize>
+    <origin>0.5 0.5</origin>
+	<path>./__xml Main Menu Wheels Logo/MAIN MENU Wheels Clean/${system.theme}.png</path>
+	<path>./__xml Main Menu Wheels Logo/MAIN MENU Wheels (Para 3 Niveis) Galacticas/${system.theme}.png</path>
+	<linearSmooth>true</linearSmooth>
+	<zIndex>30</zIndex>
+</image>
+
+<!-- Arte extra Fixa Gamelist-->		
+<image name="arte_extra_fixa_gamelist" extra="true">
+    <origin>0 0</origin>
+    <pos>0 0</pos>
+    <maxSize>1 1</maxSize>
+    <path>./__xml GameList/Artes Fixas/Grid Fundo.png</path>
+    <zIndex>1</zIndex> 
+</image> 
+
+
+<!-- ====== Artes relacionadas aos jogos ====== -->
+
+<!-- A Arte md_boxback esta livre, ainda nao usei -->
+
+<!-- Arte Fanart -->	
+<image name="md_fanart">
+	<pos>0.499 0.725</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.350 0.354</maxSize>
+    <zIndex>2</zIndex>         
+</image>
+
+<!-- Arte Image -->		
+<image name="md_image">
+	<pos>0.500 0.327</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.344 0.350</maxSize>
+    <zIndex>3</zIndex>         
+</image> 
+
+<!-- Arte video -->
+<video name="md_video">
+	<pos>0.500 0.328</pos>
+	<origin>0.5 0.5</origin>
+	<maxSize>0.348 0.356</maxSize>
+	<loops>99</loops>
+	<delay>2</delay> 
+	<effect>none</effect>
+	<zIndex>20</zIndex> 
+</video>
+
+<!-- Arte caixa -->
+<image name="md_thumbnail">
+	<pos>0.872 0.258</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.225 0.470</maxSize>
+    <zIndex>3</zIndex>         
+</image>  
+
+<!-- Arte do cartucho ou CD, tem que ser boxback pois as outras se repetem -->
+<image name="md_cartridge">
+	<pos>0.871 0.720</pos>
+    <origin>0.5 0.5</origin>
+	<maxSize>0.230 0.355</maxSize>
+    <zIndex>3</zIndex>         
+</image> 
+
+<!-- Arte Marquee/Wheel/Logo do jogo -->
+<image name="md_marquee">
+    <pos>0.498 0.069</pos>
+    <maxSize>0.216 0.110</maxSize>
+    <origin>0.5 0.5</origin>
+    <zIndex>30</zIndex>
+    <visible>false</visible>
+</image>
+
+</view>
+   
+   </theme>
