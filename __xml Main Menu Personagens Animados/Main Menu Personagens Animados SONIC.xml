@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Personagens_Animados_SONIC1" extra="true">
+         <pos>0.650 0</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Sonic/SONIC1.png</path>
+		 <zIndex>200</zIndex>
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_SONIC2" extra="true">
+         <pos>0.780 0.230</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Sonic/SONIC2.png</path>
+		 <zIndex>300</zIndex>
+		 
+<storyboard repeat="forever">
+<animation property="rotation" from="20" to="40" duration="900" autoreverse="true" begin="0000" repeat="999"/>
+</storyboard>  
+
+</image>
+
+</view>
+
+</theme>

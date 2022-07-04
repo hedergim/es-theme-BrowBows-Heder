@@ -1,0 +1,103 @@
+<theme>
+   <formatVersion>7</formatVersion>
+ 
+
+<!-- 
+ZOOM IN  
+         <storyboard>
+		 <animation property="scale" from="1.05" to="1.0" begin="1" duration="500" mode="linear"/>    
+         </storyboard>
+ZOOM OUT		 
+         <storyboard>
+         <animation property="scale" mode="easyIn" from="1" begin="1" to="1.02"  duration="500"/>
+         </storyboard>		 
+ -->  
+
+
+
+<view name="system">
+
+<!--  MAIN MENU Wallpapers Abstrato 01 Fullscreen     -->   
+<image name="MAIN_MENU_Wallpapers_Abstrato_01_Fullscreen">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>   
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Personagens 01 Fullscreen     -->  
+<image name="MAIN_MENU_Wallpapers_Personagens_01_Fullscreen">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>   
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Consoles 01 Fullscreen     -->  
+<image name="MAIN_MENU_Wallpapers_Consoles_01_Fullscreen">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>    
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Basic 01 Fullscreen     -->  
+<image name="MAIN_MENU_Wallpapers_Basic_01_Fullscreen">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Randon Fanarts Games Fullscreen     -->   
+<image name="MAIN_MENU_Wallpapers_Randon_Fanarts_Games_Fullscreen">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>   
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Consoles 01 Center     -->  
+<image name="MAIN_MENU_Wallpapers_Consoles_01_Center">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>   
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Personagens 01 Center     -->  
+<image name="MAIN_MENU_Wallpapers_Personagens_01_Center">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Misc Fullscreen     -->  	
+<image name="MAIN_MENU_Wallpapers_Misc_Fullscreen_Consoles_01">
+         <storyboard>
+         <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>
+		 </storyboard>
+</image>
+
+<image name="MAIN_MENU_Wallpapers_Misc_Fullscreen_Personagens_01">
+		 <storyboard>
+		 <animation mode="easeOut" from="0" to="0" duration="1000" property="opacity"/>
+		 <animation property="opacity" from="0" to="1" begin="1900" duration="1000"/>
+         </storyboard>
+</image>
+
+<!--  MAIN MENU Wallpapers Misc Center     --> 
+<image name="MAIN_MENU_Wallpapers_Mix_Consoles_01_Center">
+         <storyboard>
+		 <animation property="opacity" from="0" to="1" begin="1" duration="1000"/>
+         </storyboard>
+</image>
+
+<image name="MAIN_MENU_Wallpapers_Mix_Personagens_01_Center">
+		 <storyboard>
+		 <animation mode="easeOut" from="0" to="0" duration="1000" property="opacity"/>
+		 <animation property="opacity" from="0" to="1" begin="1900" duration="1000"/>
+         </storyboard>
+</image>
+
+
+
+
+</view>
+
+
+</theme>

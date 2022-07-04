@@ -1,0 +1,36 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<image name="MAIN_MENU_Video_Position_Moldura_center_BIG_4:3" extra="true">
+         <pos>-0.270 -0.218</pos>
+         <size>1.530 1.475</size>
+         <path>./__xml Main Menu Video Position Moldura/Moldura Center BIG Vidro 4por3.png</path>
+		 <zIndex>110</zIndex>			 
+	
+<storyboard>   
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+</storyboard>
+	
+</image>
+
+
+<image name="MAIN_MENU_Video_Position_Moldura_Fundo_center_BIG_4:3" extra="true">
+         <pos>-0.270 -0.218</pos>
+         <size>1.530 1.475</size>
+         <path>./__xml Main Menu Video Position Moldura/Center BIG Classic Fundo 4por3.png</path>
+		 <zIndex>90</zIndex>			 
+		 
+<storyboard>   
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+</storyboard>
+
+
+</image>
+
+</view>
+
+</theme>

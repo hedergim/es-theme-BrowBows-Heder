@@ -1,0 +1,16 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Wheels_Background" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./Vertical Right Classic.png</path>
+		 <zIndex>50</zIndex>
+</image>
+
+</view>
+
+</theme>

@@ -1,0 +1,21 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<image name="MAIN_MENU_Video_Position_Bezel_para_16:9" extra="true">
+         <pos>0.290 0.190</pos>
+         <size>0.432 0.442</size>
+         <path>./__xml Main Menu Video Position Bezel/Bezels/${system.theme}.png</path>
+		 <zIndex>47</zIndex>			 
+		 
+<storyboard>   
+<animation mode="easeOut" from="0" to="0" duration="500" property="opacity"/>
+<animation mode="easeOut" from="0" to="1" begin="4500" duration="500" property="opacity"/>	
+</storyboard>
+	
+</image>
+
+</view>
+
+</theme>

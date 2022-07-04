@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<image name="logo">
+<path>./__xml Main Menu Wheels Logo/MAIN MENU Wheels Retangular 02/${system.theme}.png</path>
+</image>
+
+</view>
+
+</theme>

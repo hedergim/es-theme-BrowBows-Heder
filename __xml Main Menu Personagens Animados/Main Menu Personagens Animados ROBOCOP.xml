@@ -1,0 +1,57 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Personagens_Animados_ROBOCOP1" extra="true">
+         <pos>0.530 0.100</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Robocop/ROBO1.png</path>
+		 <zIndex>300</zIndex>
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_ROBOCOP2" extra="true">
+         <pos>0.740 0.470</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Robocop/ROBO2.png</path>
+		 <zIndex>290</zIndex>
+		 
+<storyboard repeat="forever">
+<animation property="rotation" from="05" to="15" duration="3000" autoreverse="true" begin="0000" repeat="999"/>
+</storyboard>  
+
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_ROBOCOP3" extra="true">
+         <pos>0.530 0.100</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Robocop/ROBO3.png</path>
+		 <zIndex>280</zIndex>
+
+			<storyboard>
+        		<animation property="offsetX" to="0.006" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
+        		<animation property="offsetY" to="0.006" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
+
+			</storyboard>		 
+		 
+		 
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_ROBOCOP4" extra="true">
+         <pos>0.400 -0.035</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Robocop/ROBO4.png</path>
+		 <zIndex>270</zIndex>
+		 
+			<storyboard repeat="forever">
+				<animation property="opacity" begin="100" to="0" duration="0"/>
+				<animation property="opacity" begin="423" to="1" duration="0"/>
+			</storyboard>		 
+		 
+		 
+</image>
+
+</view>
+
+</theme>

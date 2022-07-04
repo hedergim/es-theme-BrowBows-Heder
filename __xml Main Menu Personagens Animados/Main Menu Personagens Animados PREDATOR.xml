@@ -1,0 +1,108 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR1" extra="true">
+         <pos>0.560 0.120</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED1.png</path>
+		 <zIndex>300</zIndex>
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR2" extra="true">
+         <pos>0.560 0.120</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED2.png</path>
+		 <zIndex>290</zIndex>
+
+			<storyboard repeat="forever">
+				<animation property="opacity" begin="500" to="0" duration="500"/>
+				<animation property="opacity" begin="2000" to="1" duration="500"/>
+			</storyboard>		 
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR3" extra="true">
+         <pos>0.560 0.120</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED3.png</path>
+		 <zIndex>280</zIndex>
+
+			<storyboard repeat="forever">
+			
+			<animation property="x" from="0.630" duration="500" />
+			<animation property="y" from="-0.140" duration="500" />
+
+            <animation property="offsetX" from="0" to="0.060" duration="3500" />
+			<animation property="offsetY" from="0" to="-0.140" duration="3500" />
+<!---
+
+                <animation property="offsetX" begin="1500" to="0.060" duration="2800"/>
+				<animation property="offsetY" begin="1500" to="-0.140" duration="2800"/>
+
+<!---		
+        		<animation property="offsetX" begin="1500" to="0.060" duration="2800" mode="easeOutCubic"/>
+				<animation property="offsetY" begin="1500" to="-0.140" duration="2800" mode="easeOutCubic"/>
+-->
+			</storyboard>		 
+	 
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR4" extra="true">
+         <pos>0.760 -0.160</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED4.png</path>
+		 <zIndex>270</zIndex>
+		 
+<storyboard>
+        <animation property="y" from="0.05" begin="-1" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="2950" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+		<animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" mode="easyIn"/>
+		
+      </storyboard>		 
+		 
+
+
+	
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR5" extra="true">
+         <pos>0.470 0.025</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED5.png</path>
+		 <zIndex>260</zIndex>
+
+<storyboard>
+        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="2950" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+		<animation property="rotation" from="0" to="360" begin="0" duration="9000" repeat="forever"/>
+		 <animation property="opacity" from="1" to="0" duration="2950" mode="easeIn"/>
+      </storyboard>		
+
+ 
+		 
+</image>
+
+
+<image name="MAIN_MENU_Personagens_Animados_PREDATOR6" extra="true">
+         <pos>0.560 0.120</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED6.png</path>
+		 <zIndex>250</zIndex>
+		 
+	     <storyboard>
+         <animation property="x" from="2" begin="8" duration="0" mode="easyOut"/>
+
+         <animation property="scale" to="9.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		 </storyboard>		 
+		 
+		 
+</image>
+
+</view>
+
+</theme>

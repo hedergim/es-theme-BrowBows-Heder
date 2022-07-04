@@ -1,0 +1,16 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="basic, detailed, video, grid, gamecarousel">
+
+
+<image name="GameList_Rodape_Background" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./__xml GameList Rodape Background/GameList Rodape Background ON.png</path>
+		 <zIndex>50</zIndex>
+</image>
+
+</view>
+
+</theme>

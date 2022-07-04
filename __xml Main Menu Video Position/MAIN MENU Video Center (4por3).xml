@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<video name="Main_Menu_Video_center_4:3" extra="true">
+ <path>{random}</path>  
+ <pos>0.506 0.410</pos>
+ <origin>0.5 0.5</origin>
+ <maxSize>0.326 0.436</maxSize>
+ <delay>4.2</delay>
+ <zIndex>43</zIndex>
+ <showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+<color>FFFFFF</color>
+
+</video>
+
+
+</view>
+
+</theme>

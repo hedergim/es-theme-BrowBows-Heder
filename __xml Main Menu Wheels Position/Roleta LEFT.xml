@@ -1,0 +1,59 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<!--  Roleta LEFT  -->
+		<carousel name="systemcarousel">
+			<type>vertical_wheel</type>
+			<pos>-0.39 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<color>00000000</color>
+			<logoScale>1.2</logoScale>
+			<logoSize>0.150 0.260</logoSize>
+			<logoRotation>8</logoRotation>
+			<logoRotationOrigin>-2.5 0.5</logoRotationOrigin>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>8</maxLogoCount>
+			<systemInfoDelay>0.1</systemInfoDelay>
+			<zIndex>999</zIndex>
+		</carousel>
+  
+	  
+<!--  Logo da Roleta  -->	  
+	  <image name="logo">
+<!--       <path>./Wheels MAIN MENU/Wheels MAIN MENU Clean/${system.theme}.png</path>   -->	
+	   <storyboard>
+<animation mode="linear" begin="0" from="1" to="1" duration="500" property="opacity"/>
+</storyboard>
+	   </image>
+	   
+
+	 
+	 
+<!--  Exibe quantidade de jogos no Menu principal  -->	  
+      <text name="systemInfo">
+		<glowColor>000000</glowColor>
+        <pos>0.375 0.949</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+	    <rotation>0</rotation> 
+        <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+	    <fontSize>0.024</fontSize>
+        <zIndex>999</zIndex>
+      </text>   
+	  
+<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
+     <helpsystem name="help">
+     <textColor>ffff00</textColor>
+     <origin>0.5 0.5</origin>
+     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+     <fontSize>0.0222</fontSize>     
+     <pos>0.500 0.9784</pos> 
+   </helpsystem>	  
+	 
+
+</view>
+
+</theme>

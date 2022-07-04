@@ -1,0 +1,16 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Wallpapers_Randon_Fanarts_Games_Fullscreen" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>{random:fanart}</path>
+		 <zIndex>1</zIndex>
+</image>
+
+</view>
+
+</theme>

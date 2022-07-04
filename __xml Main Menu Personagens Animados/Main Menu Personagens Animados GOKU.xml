@@ -1,0 +1,216 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+
+	  	<!-- SANGOKU -->
+		<image name="avatar" extra="static">
+			<pos>0.758 0.180</pos>
+			<maxSize>0.18 0.77</maxSize>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU.png</path>
+			<zIndex>300</zIndex>
+		</image>
+		
+		<!-- LUZ AMARELA -->
+		<image name="avatar2, avatar3, avatar4, avatar5" extra="static">
+			<maxSize>0.5 1</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>200</zIndex>
+		</image>
+		 <image name="avatar2" extra="static">
+			<pos>0.608 -0.050</pos>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_1.png</path>
+			<opacity>1</opacity>
+			<storyboard repeat="forever">
+				<animation property="opacity" begin="200" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="1" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="avatar3" extra="static">
+			<pos>0.608 -0.050</pos>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_2.png</path>
+			<zIndex>200</zIndex>
+			<storyboard repeatAt="forever">
+				<animation property="opacity" begin="200" to="1" duration="0"/>
+				<animation property="opacity" begin="400" to="0" duration="0"/>
+				<animation property="opacity" begin="600" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="avatar4" extra="static">
+			<pos>0.608 -0.050</pos>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_3.png</path>
+			<storyboard repeatAt="forever">
+				<animation property="opacity" begin="400" to="1" duration="0"/>
+				<animation property="opacity" begin="600" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="avatar5" extra="static">
+			<pos>0.608 -0.050</pos>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_4.png</path>
+			<zIndex>200</zIndex>
+			<storyboard repeatAt="forever">
+				<animation property="opacity" begin="600" to="1" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		
+		<!-- LUZ AZUL -->
+		<image name="avatar6, avatar7, avatar8" extra="static">
+			<origin>0 0</origin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>200</zIndex>
+		</image>
+		<image name="avatar6" extra="static">
+			<pos>0.820 0.525</pos>
+			<maxSize>0.185 0.41</maxSize>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_1.png</path>
+			<storyboard repeat="forever">
+        		<animation property="opacity" begin="1000" from="0" to="1" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" begin="4000" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="avatar7" extra="static">
+			<pos>0.701 0.246</pos>
+			<maxSize>0.073 0.236</maxSize>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_2.png</path>
+			<storyboard repeat="forever">
+        		<animation property="opacity" begin="3000" from="0" to="1" duration="100" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="3000" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="avatar8" extra="static">
+			<pos>0.701 0.276</pos>
+			<maxSize>0.073 0.236</maxSize>
+			<path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_2.png</path>
+			<rotation>-20</rotation>
+			<storyboard repeat="forever">
+        		<animation property="opacity" begin="2000" from="0" to="1" duration="100" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="3000" to="0" duration="0"/>
+			</storyboard>
+		</image>
+
+
+<!---
+
+<image name="MAIN_MENU_Personagens_Animados_Goku" extra="true">
+         <pos>0.658 0.100</pos>
+			<size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU.png</path>
+		 <zIndex>50</zIndex>
+</image>
+
+
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_yellow_1" extra="static">
+          <pos>0.508 -0.150</pos>
+			<opacity>1</opacity>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_1.png</path>
+		 <zIndex>50</zIndex>
+
+			<storyboard repeat="forever">
+				<animation property="opacity" begin="200" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="1" duration="0"/>
+			</storyboard>
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_yellow_2" extra="static">
+         	<pos>0.508 -0.150</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_2.png</path>
+		 <zIndex>49</zIndex>
+
+	 		
+			<storyboard repeatAt="forever">
+				<animation property="opacity" begin="200" to="1" duration="0"/>
+				<animation property="opacity" begin="400" to="0" duration="0"/>
+				<animation property="opacity" begin="600" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+	 
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_yellow_3" extra="static">
+         	
+		<pos>0.508 -0.150</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_3.png</path>
+		 <zIndex>50</zIndex>
+
+			<storyboard repeatAt="forever">
+				<animation property="opacity" begin="400" to="1" duration="0"/>
+				<animation property="opacity" begin="600" to="0" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+	
+		 
+</image>
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_yellow_4" extra="static">
+         <pos>0.508 -0.150</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_yellow_4.png</path>
+		 <zIndex>50</zIndex>
+	 
+		 <storyboard repeatAt="forever">
+				<animation property="opacity" begin="600" to="1" duration="0"/>
+				<animation property="opacity" begin="800" to="0" duration="0"/>
+			</storyboard>
+		 
+</image>
+
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_blue_1" extra="true">
+         <pos>0.820 0.525</pos>
+			<maxSize>0.185 0.41</maxSize>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_1.png</path>
+		 <zIndex>50</zIndex>
+	 
+		 			<storyboard repeat="forever">
+        		<animation property="opacity" begin="1000" from="0" to="1" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" begin="4000" to="0" duration="0"/>
+			</storyboard>
+		 
+</image>
+
+
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_blue_2" extra="true">
+         			<pos>0.701 0.246</pos>
+			<maxSize>0.073 0.236</maxSize>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_2.png</path>
+		 <zIndex>50</zIndex>
+		 
+		 
+					<storyboard repeat="forever">
+        		<animation property="opacity" begin="3000" from="0" to="1" duration="100" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="3000" to="0" duration="0"/>
+			</storyboard> 
+		 
+</image>
+
+
+<image name="MAIN_MENU_Personagens_Animados_GOKU_light_blue_3" extra="true">
+			<pos>0.701 0.276</pos>
+			<maxSize>0.073 0.236</maxSize>
+         <path>./__xml Main Menu Personagens Animados/Goku/GOKU_light_blue_2.png</path>
+		 <rotation>-20</rotation>
+		 <zIndex>50</zIndex>
+			
+			
+			
+			<storyboard repeat="forever">
+        		<animation property="opacity" begin="2000" from="0" to="1" duration="100" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="3000" to="0" duration="0"/>
+			</storyboard>
+		 
+</image>
+ -->
+</view>
+
+</theme>

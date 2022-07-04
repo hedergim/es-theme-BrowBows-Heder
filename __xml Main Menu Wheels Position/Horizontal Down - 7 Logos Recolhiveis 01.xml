@@ -1,0 +1,65 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+<!--  Roleta  -->
+	  <carousel name="systemcarousel">
+        <type>grid</type>
+        <pos>0 0.30</pos>
+        <size>1 1</size>
+        <zIndex>5000</zIndex>         
+        <logoScale>1.30</logoScale> 
+        <logoSize>0.140 0.25</logoSize>
+        <color>00000000</color>
+        <logoAlignment>center</logoAlignment>
+        <maxLogoCount>7</maxLogoCount>
+      </carousel>
+	  
+	  
+<!--  Logo da Roleta  -->	
+		<image name="logo">
+      <!--  <path>./Wheels MAIN MENU/Wheels MAIN MENU Circulares/${system.theme}.png</path>	 -->
+		<linearSmooth>true</linearSmooth>
+<storyboard event="activate">
+<animation property="y" to="0.5" begin="2500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
+<storyboard event="scroll">
+<animation property="y" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
+<storyboard event="deactivate">
+<animation property="y" to="0.5" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="35" mode="Linear"/>
+</storyboard>
+		</image>  	 
+	 
+<!--  Exibe quantidade de jogos no Menu principal  -->	  
+      <text name="systemInfo">
+		<glowColor>000000</glowColor>
+        <pos>0.375 0.949</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+	    <rotation>0</rotation> 
+        <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+	    <fontSize>0.024</fontSize>
+        <zIndex>999</zIndex>
+      </text>   
+	  
+<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
+     <helpsystem name="help">
+     <textColor>ffff00</textColor>
+     <origin>0.5 0.5</origin>
+     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+     <fontSize>0.0222</fontSize>     
+     <pos>0.500 0.9784</pos> 
+   </helpsystem>	  
+	 
+
+</view>
+
+</theme>

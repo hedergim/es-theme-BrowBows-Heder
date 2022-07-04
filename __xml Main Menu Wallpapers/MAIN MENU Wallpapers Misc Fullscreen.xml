@@ -1,0 +1,28 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Wallpapers_Misc_Fullscreen_Consoles_01" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Consoles 01/${system.theme}.jpg</path>
+		 <zIndex>1</zIndex>
+
+</image>
+
+<image name="MAIN_MENU_Wallpapers_Misc_Fullscreen_Personagens_01" extra="true">
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Personagens 01/${system.theme}.jpg</path>
+		 <zIndex>1</zIndex>
+		 <storyboard>
+		 <animation mode="easeOut" from="0" to="0" duration="2000" property="opacity"/>
+		 <animation mode="easeOut" from="1" to="1" begin="2000" duration="1000" property="opacity"/>
+         </storyboard>
+</image>
+
+</view>
+
+</theme>
