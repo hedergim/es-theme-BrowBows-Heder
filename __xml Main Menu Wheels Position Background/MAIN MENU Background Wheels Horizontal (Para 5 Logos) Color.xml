@@ -1,0 +1,33 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+<image name="MAIN_MENU_Wheels_Background" extra="true">
+         <pos>-1.200 0.520</pos>
+         <size>2.400 0.500</size>
+         <path>./sky1.png</path>
+		 <zIndex>50</zIndex>
+		 
+		 <storyboard>
+        		<animation property="offsetX" to="1.000" autoreverse="true" duration="40000" repeat="forever"/>
+			</storyboard>
+		 
+</image>
+
+<image name="MAIN_MENU_Wheels_Background2" extra="true">
+         <pos>-0.200 0.520</pos>
+         <size>2.400 0.500</size>
+         <path>./sky2.png</path>
+		 <zIndex>50</zIndex>
+		 
+		 		 <storyboard>
+        		<animation property="offsetX" to="-1.000" autoreverse="true" duration="15000" repeat="forever"/>
+			</storyboard>
+		 
+</image>
+
+</view>
+
+</theme>
