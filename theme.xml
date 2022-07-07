@@ -18,7 +18,7 @@
 
 
 
-<!---------------------------variable------------------------------------- -->
+<!----------------------------variable------------------------------------- -->
  
 <subset name="Main Menu _ Wallpapers" displayName="Main Menu _ Wallpapers">
 	<include name="Consoles 01 Fullscreen / para 3 Níveis 01" displayName="Consoles 01 Fullscreen / para 3 Níveis 01">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Consoles 01 Fullscreen.xml</include>
