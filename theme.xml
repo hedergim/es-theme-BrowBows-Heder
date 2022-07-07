@@ -219,6 +219,8 @@
      <include subset="OFF" name="OFF">./__xml GameList Rodape Background/GameList Rodape Background OFF.xml</include>
 </subset>
 	
+
+	
 <!---------------------------screen------------------------------------- -->
 
 <view name="screen">
@@ -265,7 +267,14 @@
       <pos>0.915 0.013</pos>
       <size>0.07 0.07</size>
     </batteryIndicator>
-    </view>
+
+</view>
+
+
+		 
+
+
+
 
 <!------------ Menu de Opcoes = Start, select ------------------------------------- -->
 

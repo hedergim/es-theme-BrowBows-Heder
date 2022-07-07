@@ -5,28 +5,30 @@
 
 
 <image name="MAIN_MENU_Wheels_Background" extra="true">
-         <pos>-1.200 0.520</pos>
-         <size>2.400 0.500</size>
+         <pos>-0.600 0.480</pos>
+         <size>1.700 0.600</size>
          <path>./sky1.png</path>
-		 <zIndex>50</zIndex>
+		 <zIndex>49</zIndex>
 		 
 		 <storyboard>
-        		<animation property="offsetX" to="1.000" autoreverse="true" duration="40000" repeat="forever"/>
+        		<animation property="offsetX" from="0.000" to="0.500" autoreverse="true" duration="15000" repeat="forever"/>
 			</storyboard>
 		 
 </image>
 
 <image name="MAIN_MENU_Wheels_Background2" extra="true">
-         <pos>-0.200 0.520</pos>
-         <size>2.400 0.500</size>
+         <pos>-0.100 0.550</pos>
+         <size>1.700 0.600</size>
          <path>./sky2.png</path>
 		 <zIndex>50</zIndex>
 		 
-		 		 <storyboard>
-        		<animation property="offsetX" to="-1.000" autoreverse="true" duration="15000" repeat="forever"/>
+		 <storyboard>
+        		<animation property="offsetX" from="0.000" to="-0.500" autoreverse="true" duration="15000" repeat="forever"/>
+				<animation property="opacity" to="100" begin="0" duration="0" mode="linear"/>
 			</storyboard>
 		 
 </image>
+
 
 </view>
 
