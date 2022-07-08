@@ -23,6 +23,11 @@
         <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
 	    <fontSize>0.024</fontSize>
         <zIndex>999</zIndex>
+		
+		<storyboard>
+        	<animation property="opacity" from="0" to="1" begin="100" duration="250" mode="EaseOut"/>
+			<animation property="x" from="0.500" begin="80" duration="100" mode="EaseInOut"/>
+		</storyboard>	
  </text> 
 	  
 <!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
