@@ -25,29 +25,7 @@
 	   </image>
 	   
 
-	 
-	 
-<!--  Exibe quantidade de jogos no Menu principal  -->	  
-      <text name="systemInfo">
-		<glowColor>000000</glowColor>
-        <pos>0.375 0.949</pos>
-        <backgroundColor>00000000</backgroundColor>
-        <color>ffffff</color>
-	    <rotation>0</rotation> 
-        <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
-	    <fontSize>0.024</fontSize>
-        <zIndex>999</zIndex>
-      </text> 
-	  
-<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
-     <helpsystem name="help">
-     <textColor>ffff00</textColor>
-     <origin>0.5 0.5</origin>
-     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
-     <fontSize>0.0222</fontSize>     
-     <pos>0.500 0.9784</pos> 
-   </helpsystem>	  
-	 
+
 
 </view>
 

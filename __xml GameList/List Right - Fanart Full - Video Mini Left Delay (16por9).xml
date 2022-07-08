@@ -38,6 +38,10 @@ IMPORTANTE: para criar uma arte nos temas baseados nesses temas obrigatorios, a 
 <!--  Cor do jogo Selecionado  -->
 	<selectedColor>FFFFFFFF</selectedColor>	
 <!--  profundidade da arte / sequencia de amostragem da arte  -->
+		 <glowColor>000000</glowColor>
+		 <glowSize>2</glowSize>
+		 <backgroundColor>00000000</backgroundColor>
+
 	<zIndex>50</zIndex>	
 </textlist> 
 
@@ -449,6 +453,7 @@ IMPORTANTE: para criar uma arte nos temas baseados nesses temas obrigatorios, a 
          <size>0.310 0.350</size>
 		 <fontSize>0.019</fontSize>
 		 <glowColor>000000</glowColor>
+		 <glowSize>2</glowSize>
 		 <backgroundColor>00000000</backgroundColor>
 		 <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
          <color>ffff00</color>

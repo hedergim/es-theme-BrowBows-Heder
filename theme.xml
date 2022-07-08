@@ -4,11 +4,43 @@
 <formatVersion>7</formatVersion>
 
  <feature supported="carousel">
-   <view name="system">
+ 
+<view name="system">
+	
 	<sound name="directory">
-    <path>./___music</path>
-	</sound>	  
-   </view>
+       <path>./___music</path>
+	</sound>	 
+
+
+<!--  Exibe quantidade de jogos no Menu principal  -->	  
+<text name="systemInfo">
+		<glowColor>000000</glowColor>
+		<glowSize>2</glowSize>
+		<backgroundColor>00000000</backgroundColor>
+        <pos>0.375 0.949</pos>
+        <color>ffffff</color>
+	    <rotation>0</rotation> 
+        <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+	    <fontSize>0.024</fontSize>
+        <zIndex>999</zIndex>
+ </text> 
+	  
+<!--  Exibe menu de ajuda: Selecionar, voltar, etc...  -->	 
+<helpsystem name="help">
+	 <glowColor>000000</glowColor>
+	 <glowSize>2</glowSize>
+	 <backgroundColor>00000000</backgroundColor>
+     <textColor>ffff00</textColor>
+     <origin>0.5 0.5</origin>
+     <fontPath>./_inc/fonts/OpenSans-Bold.ttf</fontPath>
+     <fontSize>0.0222</fontSize>     
+     <pos>0.500 0.9784</pos> 
+</helpsystem>
+
+
+	
+</view>
+
 </feature>
 
 <!--
@@ -220,6 +252,14 @@ Theme By Browbows Heder
 	
 
 	
+	
+
+
+
+
+
+
+   
 <!---------------------------screen------------------------------------- -->
 
 <view name="screen">
@@ -235,6 +275,8 @@ Theme By Browbows Heder
 		<verticalAlignment>right</verticalAlignment>
 		<zIndex>555</zIndex>
 		</text>
+		
+		
 
 <!-- Icone do Controle Conectado canto superior esquerdo -->		
     <controllerActivity name="controllerActivity">
