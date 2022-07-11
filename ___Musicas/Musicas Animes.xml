@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+ <feature supported="carousel">
+   <view name="system">
+	  <sound name="directory">
+         <path>./___Musicas/Musicas Animes</path>
+	  </sound>	  
+   </view>
+</feature>
+  
+</theme>

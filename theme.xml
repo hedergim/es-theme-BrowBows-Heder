@@ -3,13 +3,9 @@
 <theme defaultView="detailed">
 <formatVersion>7</formatVersion>
 
- <feature supported="carousel">
+<feature supported="carousel">
  
-<view name="system">
-	
-	<sound name="directory">
-       <path>./___music</path>
-	</sound>	 
+<view name="system"> 
 
 
 <!--  Exibe quantidade de jogos no Menu principal  -->	  
@@ -79,6 +75,7 @@ Theme By Browbows Heder
 	<include name="OFF" displayName="OFF">./__xml Main Menu Wallpapers Efeitos/OFFFFFFFFFFFFF.xml</include>
 	<include name="ZOOM" displayName="ZOOM">./__xml Main Menu Wallpapers Efeitos/Main Menu Wallpapers Efeitos ZOOM.xml</include>
 	<include name="FADE" displayName="FADE">./__xml Main Menu Wallpapers Efeitos/Main Menu Wallpapers Efeitos FADE.xml</include>
+	<include name="GIRANDO" displayName="GIRANDO">./__xml Main Menu Wallpapers Efeitos/Main Menu Wallpapers Efeitos GIRANDO.xml</include>
 </subset>
 
 
@@ -174,6 +171,11 @@ Theme By Browbows Heder
 	<include name="OFF" displayName="OFF">./__xml Main Menu Video Position Bezel/OFFFFFFFFFFFFF.xml</include>
 	<include name="Center (Para 16:9)" displayName="Center (Para 16:9)">./__xml Main Menu Video Position Bezel/MAIN MENU Video Position Bezel Center (16por9).xml</include>
 </subset>	
+
+<subset name="Main Menu _ Video Efeitos" displayName="Main Menu _ Video Efeitos">
+	<include name="OFF" displayName="OFF">./__xml Main Menu Video Efeito/OFFFFFFFFFFFFF.xml</include>
+	<include name="GIRANDO" displayName="GIRANDO">./__xml Main Menu Video Efeito/MAIN MENU Video Efeito GIRANDO.xml</include>
+</subset>
 	
 <subset name="Main Menu _ Shaders" displayName="Main Menu _ Shaders">
    <include name="OFF" displayName="OFF">./__xml Main Menu Efeitos/OFFFFFFFFFFFFF.xml</include>
@@ -247,6 +249,15 @@ Theme By Browbows Heder
    <include subset="sound" name="sound iata">./__xml Main Menu e Gamelist Sound Cursor/giata.xml</include>
    <include subset="sound" name="sound scroll">./__xml Main Menu e Gamelist Sound Cursor/scroll.xml</include>
    <include subset="sound" name="sound line">./__xml Main Menu e Gamelist Sound Cursor/line.xml</include>
+</subset>
+
+
+<subset name="Musicas" displayName="Musicas">
+   <include name="Musicas Animes" displayName="Musicas Animes">./___Musicas/Musicas Animes.xml</include>
+   <include name="Musicas Games" displayName="Musicas Games">./___Musicas/Musicas Games.xml</include>
+   <include name="Musicas Hits 80 e 90 (ogg)" displayName="Musicas Hits 80 e 90 (ogg)">./___Musicas/Musicas Hits 80 e 90 (ogg).xml</include>
+   <include name="Musicas Karaoke" displayName="Musicas Karaoke">./___Musicas/Musicas Karaoke.xml</include>
+   <include name="Musicas Sem Direito Autoral" displayName="Musicas Sem Direito Autoral">./___Musicas/Musicas Sem Direito Autoral.xml</include>
 </subset>
 
 
