@@ -3,9 +3,9 @@
 <theme defaultView="detailed">
 <formatVersion>7</formatVersion>
 
-<feature supported="carousel">
  
 <view name="system"> 
+
 
 
 <!--  Exibe quantidade de jogos no Menu principal  -->	  
@@ -42,15 +42,9 @@
 	
 </view>
 
-</feature>
-
-<!--
-Theme By Browbows Heder
--->
 
 
-
-<!------------------------------variable---------------------------------------- -->
+<!------------------------------ Opcoes do Tema ---------------------------------------- -->
  
 <subset name="Main Menu _ Wallpapers" displayName="Main Menu _ Wallpapers">
 	<include name="Consoles 01 Fullscreen / para 3 Níveis 01" displayName="Consoles 01 Fullscreen / para 3 Níveis 01">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Consoles 01 Fullscreen.xml</include>
@@ -62,6 +56,9 @@ Theme By Browbows Heder
 	<include name="Misc Fullscreen" displayName="Misc Fullscreen">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Misc Fullscreen.xml</include>
 	<include name="Misc Center" displayName="Misc Center">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Misc Center.xml</include>
  	<include name="Randon Fanarts Games Fullscreen" displayName="Randon Fanarts Games Fullscreen">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Randon Fanarts Games Fullscreen.xml</include>
+ 	<include name="Video Loop FIRE 01 (WIP)" displayName="Video Loop FIRE 01 (WIP)">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers Video Loop FIRE 01.xml</include>
+
+
 
  <!--
     <include name="(Para 3 Niveis) 01 - Fullscreen" displayName="(Para 3 Niveis) 01 - Fullscreen">./__xml Main Menu Wallpapers/MAIN MENU Wallpapers (Para 3 Niveis) 01.xml</include>
@@ -141,7 +138,7 @@ Theme By Browbows Heder
 <subset name="Main Menu _ Wheels Position Background" displayName="Main Menu _ Wheels Position Background">
 	<include name="OFF" displayName="OFF">./__xml Main Menu Wheels Position Background/OFFFFFFFFFFFFF.xml</include>
 	<include name="Horizontal (Para 5 Logos)" displayName="Horizontal (Para 5 Logos)">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Horizontal (Para 5 Logos).xml</include>
-	<include name="Horizontal (Para 5 Logos) Color" displayName="Horizontal (Para 5 Logos) Color">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Horizontal (Para 5 Logos) Color.xml</include>
+	<include name="Horizontal Rainbow" displayName="Horizontal Rainbow">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Horizontal Rainbow.xml</include>
 	<include name="Horizontal (Para 7 Logos)" displayName="Horizontal (Para 7 Logos)">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Horizontal (Para 7 Logos).xml</include>
     <include name="Roleta Left" displayName="Roleta Left">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Roleta Left.xml</include>	
     <include name="Roleta Right" displayName="Roleta Right">./__xml Main Menu Wheels Position Background/MAIN MENU Background Wheels Roleta Right.xml</include>		
@@ -394,7 +391,7 @@ Theme By Browbows Heder
 	
 </view> 
   
-<!----------------------  VISTAS LISTAS DE JOGOS----------------------- -->
+<!----------------------  Temas Lista de Jogos Gamelist ----------------------- -->
 
 <include name="basic">./__xml GameList/basic.xml</include>
 <include name="detailed">./__xml GameList/detailed.xml</include>

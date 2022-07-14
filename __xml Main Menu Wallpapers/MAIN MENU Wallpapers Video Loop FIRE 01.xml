@@ -1,0 +1,17 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+
+
+<video name="staticBackground1">
+  <path>./__xml Main Menu Wallpapers/Video Loop FIRE 01.mp4</path>  
+  <pos>0.4 0</pos>
+  <size>0.5 0.5</size>
+  <zIndex>1</zIndex>
+</video>
+
+</view>
+
+</theme>

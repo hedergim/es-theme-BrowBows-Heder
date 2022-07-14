@@ -3,105 +3,226 @@
 
 <view name="system">
 
+<!-- Garra -->
+<image name="staticBackground2">
+         <pos>0.560 0.120</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED3.png</path>
+		 <zIndex>260</zIndex>
 
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR1" extra="true">
+	<storyboard repeat="forever">
+			recolhe
+		<animation property="offsetX" from="0" to="0.060" begin="0" duration="2500" />
+		<animation property="offsetY" from="0" to="-0.140" begin="0" duration="2500" /> 
+			pausa recolhido
+		<animation property="offsetX" from="0.060" to="0.060" begin="2500" duration="1000" />
+		<animation property="offsetY" from="-0.140" to="-0.140" begin="2500" duration="1000" /> 
+			saida
+		<animation property="offsetX" from="0.060" to="0" begin="3500" duration="150" />
+		<animation property="offsetY" from="-0.140" to="0" begin="3500" duration="150" /> 
+			pausa fora
+		<animation property="offsetX" from="0" to="0" begin="3650" duration="4000" />
+		<animation property="offsetY" from="0" to="0" begin="3650" duration="4000" /> 	
+	</storyboard>	  
+</image>
+
+<!-- Fumaca 1 -->
+<image name="staticBackground3">
+         <pos>0.760 -0.160</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED4.png</path>
+		 <zIndex>270</zIndex>
+	<opacity>0</opacity>
+	<scale>1.2</scale>
+	<scaleOrigin>0.5 1</scaleOrigin>
+		 
+	<storyboard repeat="forever">
+			deslocação vertical
+		<animation property="offsetY" from="0" to="0" begin="0" duration="500" mode="Linear"/> topo
+		<animation property="offsetY" from="0" to="0.09" begin="500" duration="1500" mode="Linear"/> base
+		<animation property="offsetY" from="0.09" to="0.03" begin="2000" duration="2650" mode="Linear"/> subida 1 
+		<animation property="offsetY" from="0.03" to="0" begin="4650" duration="2900" mode="Linear"/> subida 2 
+		<animation property="offsetY" from="0" to="0" begin="6550" duration="100" mode="Linear"/> posição final
+			saida lateral<!--
+		<animation property="offsetX" from="0" to="0.05" begin="0" duration="500"/> inicio topo
+		<animation property="offsetX" from="0.05" to="0" begin="500" duration="100"/> deslocação (oculta) base
+		<animation property="offsetX" from="0" to="0" begin="600" duration="7050" mode="Linear"/> base -> posição p/ subida vertical
+			rotação saida 
+		<animation property="rotation" from="0" to="25" begin="150" duration="350"/>
+		<animation property="rotation" from="25" to="0" begin="500" duration="100"/>
+		<animation property="rotation" from="0" to="0" begin="600" duration="7050" mode="Linear"/> -->
+                     aparecer
+        <animation property="opacity" from="0" to="0" begin="0"  duration="500" mode="Linear"/> desfocar
+		<animation property="opacity" from="0" to="0" begin="500" duration="1500" mode="Linear"/> apagado			
+		<animation property="opacity" from="0" to="1" begin="2000" duration="2650" mode="Linear"/> desfocar		
+		<animation property="opacity" from="1" to="0" begin="4650" duration="3000" mode="Linear"/>	aceso 
+			aumento 
+		<animation property="scale" from="1.2" to="1.2" begin="0" duration="500" mode="Linear"/> esticado inicial
+		<animation property="scale" from="1.2" to="0.3" begin="500" duration="1500" mode="Linear"/> encolher
+        <animation property="scale" from="0.3" to="0.8" begin="2000" duration="2650" mode="Linear"/> esticar 1
+		<animation property="scale" from="0.8" to="1.2" begin="4650" duration="2900" mode="Linear"/> esticar 2
+		<animation property="scale" from="1.2" to="1.2" begin="6550" duration="100" mode="Linear"/> esticado final
+	</storyboard>		
+</image>
+
+
+
+<!-- Brilho -->
+<image name="staticBackground4">
+         <pos>0.470 0.025</pos>
+         <size>0 0</size>
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED5.png</path>
+		 <zIndex>280</zIndex>
+
+	<storyboard repeat="forever">
+			apagar
+		<animation property="opacity" from="0.6" to="0.6" begin="0"  duration="0" mode="Linear"/>	
+		<animation property="opacity" from="0.6" to="0" begin="200"  duration="1300" mode="Linear"/>
+			apagado
+		<animation property="opacity" from="0" to="0" begin="1500" duration="2000" mode="Linear"/>	
+			acender
+		<animation property="opacity" from="0" to="0.6" begin="3500" duration="150" mode="Linear"/>		
+			aceso
+		<animation property="opacity" from="0.6" to="0.6" begin="3650" duration="4000" mode="Linear"/>			
+			rotação
+		<animation property="rotation" from="0" to="360" begin="0" duration="7650"/>		
+	</storyboard>		
+</image>	
+
+<!-- Laser 1 -->
+<image name="staticBackground5">
+	<pos>0.600 0.260</pos>
+	<size>0.7 0.001</size> 
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED6.png</path>
+		 <zIndex>290</zIndex>
+		 <origin>0.5 0.5</origin>
+	     <rotationOrigin>0.5 0.5</rotationOrigin>
+	     <tile>false</tile>
+		 
+    <storyboard repeat="forever">
+			feixe 
+		<animation property="scale" from="2.5" to="1" begin="0" duration="1500" mode="Linear"/> encolher 
+		<animation property="scale" from="1" to="0" begin="1500" duration="2100" mode="Linear"/> recolhido 
+		<animation property="scale" from="0" to="2.5" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="scale" from="2.5" to="2.5" begin="3850" duration="3800" mode="Linear"/> extendido 						
+			rotação 
+		<animation property="rotation" from="-15" to="-15" begin="0" duration="0" mode="Linear"/>	posição inicial
+		<animation property="rotation" from="-15" to="-15" begin="0" duration="1500" mode="Linear"/> angulo encolher 
+		<animation property="rotation" from="-15" to="-65" begin="1500" duration="2100" mode="Linear"/> angulo recolhido 
+		<animation property="rotation" from="-65" to="-65" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="rotation" from="-65" to="-15" begin="3850" duration="1050" mode="Linear"/> vai 1
+		<animation property="rotation" from="-15" to="-50" begin="4900" duration="850" mode="Linear"/> vem 1
+		<animation property="rotation" from="-50" to="-20" begin="5750" duration="350" mode="Linear"/> vai 2
+		<animation property="rotation" from="-20" to="-30" begin="6100" duration="350" mode="Linear"/> vem 2
+		<animation property="rotation" from="-30" to="-15" begin="6450" duration="1100" mode="Linear"/> vai 3
+		<animation property="rotation" from="-15" to="-15" begin="7550" duration="100" mode="easyOut"/> posição final		
+			intensidade
+		<animation property="opacity" from="0.4" to="0" begin="0"  duration="1500" mode="Linear"/> apagar			
+		<animation property="opacity" from="0" to="0" begin="1500" duration="2000" mode="Linear"/> apagado				
+		<animation property="opacity" from="0" to="0.4" begin="3500" duration="150" mode="Linear"/> acender				
+		<animation property="opacity" from="0.4" to="0.4" begin="3650" duration="4000" mode="Linear"/> aceso	
+	</storyboard>		 	 
+</image>
+
+<!-- Laser 2 -->
+<image name="staticBackground6">
+	<pos>0.600 0.260</pos>
+	<size>0.7 0.001</size> 
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED6.png</path>
+		 <zIndex>292</zIndex>
+		 <origin>0.5 0.5</origin>
+	     <rotationOrigin>0.5 0.5</rotationOrigin>
+	     <tile>false</tile>
+		 
+    <storyboard repeat="forever">
+			feixe 
+		<animation property="scale" from="2.5" to="1" begin="0" duration="1500" mode="Linear"/> encolher 
+		<animation property="scale" from="1" to="0" begin="1500" duration="2100" mode="Linear"/> recolhido 
+		<animation property="scale" from="0" to="2.5" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="scale" from="2.5" to="2.5" begin="3850" duration="3800" mode="Linear"/> extendido 						
+			rotação 
+		<animation property="rotation" from="-14.7" to="-14.7" begin="0" duration="0" mode="Linear"/>	posição inicial
+		<animation property="rotation" from="-14.7" to="-14.7" begin="0" duration="1500" mode="Linear"/> angulo encolher 
+		<animation property="rotation" from="-14.7" to="-64.3" begin="1500" duration="2100" mode="Linear"/> angulo recolhido 
+		<animation property="rotation" from="-64.3" to="-64.3" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="rotation" from="-64.3" to="-14.7" begin="3850" duration="1050" mode="Linear"/> vai 1
+		<animation property="rotation" from="-14.7" to="-49.8" begin="4900" duration="850" mode="Linear"/> vem 1
+		<animation property="rotation" from="-49.8" to="-19.4" begin="5750" duration="350" mode="Linear"/> vai 2
+		<animation property="rotation" from="-19.4" to="-29.5" begin="6100" duration="350" mode="Linear"/> vem 2
+		<animation property="rotation" from="-29.5" to="-14.7" begin="6450" duration="1100" mode="Linear"/> vai 3
+		<animation property="rotation" from="-14.7" to="-14.7" begin="7550" duration="100" mode="easyOut"/> posição final			
+			intensidade
+		<animation property="opacity" from="0.6" to="0" begin="0"  duration="1500" mode="Linear"/> apagar			
+		<animation property="opacity" from="0" to="0" begin="1500" duration="2000" mode="Linear"/> apagado				
+		<animation property="opacity" from="0" to="0.6" begin="3500" duration="150" mode="Linear"/> acender				
+		<animation property="opacity" from="0.6" to="0.6" begin="3650" duration="4000" mode="Linear"/> aceso	
+	</storyboard>	 	 
+</image>
+
+
+<!-- Laser 3 -->
+<image name="staticBackground7">
+	<pos>0.600 0.260</pos>
+	<size>0.7 0.001</size> 
+         <path>./__xml Main Menu Personagens Animados/Predator/PRED6.png</path>
+		 <zIndex>294</zIndex>
+		 <origin>0.5 0.5</origin>
+	     <rotationOrigin>0.5 0.5</rotationOrigin>
+	     <tile>false</tile>
+		 
+    <storyboard repeat="forever">
+			feixe 
+		<animation property="scale" from="2.5" to="1" begin="0" duration="1500" mode="Linear"/> encolher 
+		<animation property="scale" from="1" to="0" begin="1500" duration="2100" mode="Linear"/> recolhido 
+		<animation property="scale" from="0" to="2.5" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="scale" from="2.5" to="2.5" begin="3850" duration="3800" mode="Linear"/> extendido 						
+			rotação 
+		<animation property="rotation" from="-14" to="-14" begin="0" duration="0" mode="Linear"/>	posição inicial
+		<animation property="rotation" from="-14" to="-14" begin="0" duration="1500" mode="Linear"/> angulo encolher 
+		<animation property="rotation" from="-14" to="-64" begin="1500" duration="2100" mode="Linear"/> angulo recolhido 
+		<animation property="rotation" from="-64" to="-64" begin="3600" duration="250" mode="Linear"/> extender 
+		<animation property="rotation" from="-64" to="-14" begin="3850" duration="1050" mode="Linear"/> vai 1
+		<animation property="rotation" from="-14" to="-49" begin="4900" duration="850" mode="Linear"/> vem 1
+		<animation property="rotation" from="-49" to="-19" begin="5750" duration="350" mode="Linear"/> vai 2
+		<animation property="rotation" from="-19" to="-29" begin="6100" duration="350" mode="Linear"/> vem 2
+		<animation property="rotation" from="-29" to="-14" begin="6450" duration="1100" mode="Linear"/> vai 3
+		<animation property="rotation" from="-14" to="-14" begin="7550" duration="100" mode="easyOut"/> posição final			
+			intensidade
+		<animation property="opacity" from="0.4" to="0" begin="0"  duration="1500" mode="Linear"/> apagar			
+		<animation property="opacity" from="0" to="0" begin="1500" duration="2000" mode="Linear"/> apagado				
+		<animation property="opacity" from="0" to="0.4" begin="3500" duration="150" mode="Linear"/> acender				
+		<animation property="opacity" from="0.4" to="0.4" begin="3650" duration="4000" mode="Linear"/> aceso	
+	</storyboard>		 	 
+</image>
+
+
+<!-- Corpo -->
+<image name="staticBackground8">
          <pos>0.560 0.120</pos>
          <size>0 0</size>
          <path>./__xml Main Menu Personagens Animados/Predator/PRED1.png</path>
 		 <zIndex>300</zIndex>
 </image>
 
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR2" extra="true">
+<!-- Olho -->
+<image name="staticBackground9">
          <pos>0.560 0.120</pos>
          <size>0 0</size>
          <path>./__xml Main Menu Personagens Animados/Predator/PRED2.png</path>
-		 <zIndex>290</zIndex>
+		 <zIndex>310</zIndex>
 
-			<storyboard repeat="forever">
-				<animation property="opacity" begin="500" to="0" duration="500"/>
-				<animation property="opacity" begin="2000" to="1" duration="500"/>
-			</storyboard>		 
+	<storyboard repeat="forever">
+			apagar
+		<animation property="opacity" from="1" to="0" begin="0"  duration="1500" mode="Linear"/>
+			apagado
+		<animation property="opacity" from="0" to="0" begin="1500" duration="2000" mode="Linear"/>	
+			acender
+		<animation property="opacity" from="0" to="1" begin="3500" duration="150" mode="Linear"/>		
+			aceso
+		<animation property="opacity" from="1" to="1" begin="3650" duration="4000" mode="Linear"/>	
+	</storyboard>	 
 </image>
 
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR3" extra="true">
-         <pos>0.560 0.120</pos>
-         <size>0 0</size>
-         <path>./__xml Main Menu Personagens Animados/Predator/PRED3.png</path>
-		 <zIndex>280</zIndex>
-
-			<storyboard repeat="forever">
-			
-			<animation property="x" from="0.630" duration="500" />
-			<animation property="y" from="-0.140" duration="500" />
-
-            <animation property="offsetX" from="0" to="0.060" duration="3500" />
-			<animation property="offsetY" from="0" to="-0.140" duration="3500" />
-<!---
-
-                <animation property="offsetX" begin="1500" to="0.060" duration="2800"/>
-				<animation property="offsetY" begin="1500" to="-0.140" duration="2800"/>
-
-<!---		
-        		<animation property="offsetX" begin="1500" to="0.060" duration="2800" mode="easeOutCubic"/>
-				<animation property="offsetY" begin="1500" to="-0.140" duration="2800" mode="easeOutCubic"/>
--->
-			</storyboard>		 
-	 
-</image>
-
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR4" extra="true">
-         <pos>0.760 -0.160</pos>
-         <size>0 0</size>
-         <path>./__xml Main Menu Personagens Animados/Predator/PRED4.png</path>
-		 <zIndex>270</zIndex>
-		 
-<storyboard>
-        <animation property="y" from="0.05" begin="-1" duration="350" mode="easeOut"/>
-        <animation property="opacity" from="0" to="1" duration="2950" mode="easeIn"/>
-        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
-		<animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" mode="easyIn"/>
-		
-      </storyboard>		 
-		 
-
-
-	
-</image>
-
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR5" extra="true">
-         <pos>0.470 0.025</pos>
-         <size>0 0</size>
-         <path>./__xml Main Menu Personagens Animados/Predator/PRED5.png</path>
-		 <zIndex>260</zIndex>
-
-<storyboard>
-        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
-        <animation property="opacity" from="0" to="1" duration="2950" mode="easeIn"/>
-        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
-		<animation property="rotation" from="0" to="360" begin="0" duration="9000" repeat="forever"/>
-		 <animation property="opacity" from="1" to="0" duration="2950" mode="easeIn"/>
-      </storyboard>		
-
- 
-		 
-</image>
-
-
-<image name="MAIN_MENU_Personagens_Animados_PREDATOR6" extra="true">
-         <pos>0.560 0.120</pos>
-         <size>0 0</size>
-         <path>./__xml Main Menu Personagens Animados/Predator/PRED6.png</path>
-		 <zIndex>250</zIndex>
-		 
-	     <storyboard>
-         <animation property="x" from="2" begin="8" duration="0" mode="easyOut"/>
-
-         <animation property="scale" to="9.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
-         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
-		 </storyboard>		 
-		 
-		 
-</image>
 
 </view>
 
